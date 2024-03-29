@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        #rosso, #verde {width: 200px; height: 50px; margin: 30px;} /* margin è la distanza tra i contenitori*/
+        #rosso {
+            background-color: #f00;
+            border: 5px dotted #00f; /* tipi di bordo: solid, dotted, double*/
+            outline: 10px solid yellow /* qualcosa che va oltre il box model -> come un bordo ulteriore*/
+        }
+        #verde {
+            background-color: #0f0;
+            padding: 30px; /* qundo metto il padding i px si sommano ai margini | distanza contenitore contenuto */
+            box-sizing: border-box; /* il valore di padding in questo caso non viene più sommato
+                        box-sizing: content-box -> è il valore di default (quello dove il padding si somma) */
+        }
+        /*box model -> andando l'interno verso l'esterno ->
+                    1: contenuto 
+                    2: padding (area tra contenitore e contenuto)
+                    3: bordo 
+                    4: margin (area intorno | fuori dal bordo) */
+    </style>
+        
+</head>
+<body>
+    <div id="rosso"> questo div ha dimnesione 200px x 50px</div>
+    <div id="verde"> questo div ha dimensione 200px x 50px</div>
+</body>
+</html>

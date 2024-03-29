@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelle</title>
+</head>
+<body>
+    <table> <!-- <table> è il TAG parent per le Tabelle, quindi scrivero ell'interno del tag Parente= genitore-->
+        <Caption> <b>prensenze della classe di epicode <b> </Caption>
+        <tr> <!--table row, indica la riga di una tabella, è il primo child di table-->
+            <td>luca</td> <!--table data, indica la cela nella riga, child di table row-->
+            <td>26/06</td>
+            <td>presente</td>
+        </tr>
+        <tr>
+            <td>mirko</td>
+            <td>26/12</td>
+            <td>presente</td>
+        </tr>
+        <tr>
+            <th>mirko</th>
+            <th>22/07</th>
+            <th>assente</th>
+        </tr>
+        <tr>
+            <td colspan="3"> totale 45 presenti</td> <!-- colspan unisce le celle in orizzontale -> unisce le colonne
+                                                          rowspan unisce in verticale le celle -> unisce le righe-->
+        </tr>
+    </table>
+    <!-- per le tabelle grandi esistono altri TAG, servono per tenere più ordinata la scrittura del codice delle tabelle:
+    thead -> estensione di una tabella 
+    tbody -> corpo della tabella
+    tfoot -> piè pagina della tabella-->
+    <table>
+        <thead>
+            <tr>
+                <th>competenze</th>
+                <th>livello</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td colspain="2">livello medio: buono </td>
+            </tr>
+        </tfoot>
+        <tr>
+            <td>ciao</td>
+                <table> <!--- posso annidare tabbelle all' "infinito", appariranno comunque come un'inica tabella-->
+                    <tr>
+                        <td>ciao2
+
+                        </td>
+                    </tr>
+                </table>
+        </tr>
+    </table>
+</body>
+</html>

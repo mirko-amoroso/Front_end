@@ -1,0 +1,44 @@
+/* unità di misura */
+p {font-size: 30px;}
+p {font-size: 1em;} /* proporzionale all'elemento parent */
+p {font-size: 1.1rem;} /* proporzionare tutto secondo il root*/
+div {width: 50%; margin-left: 25%;} /* proporzionale all'elemento parent */
+/* vw viewport width -> si riferisce alla larghezza della viewport -> lo schermo dove verra visualizzato il codice*/
+/* vh viewport height -> si riferisce alla altezza della viewport
+
+/* esempio */
+p {font-size: 90%;}   /* div -16px- -> p -> -14px-*/
+p {font-size: 0.8em;} /* div -16px- -> p -> -12px-*/
+p {font-size: 0.5rem;} /* body -16px- -> p -> -8px-*/
+p {font-size: 0.9vw;} /* viewport -400px- -> p -> -3.6px-*/
+
+/* colori */
+article p {color: blueviolet;} /* keyword */
+article p {color: #ff0000;} /* esadecimale */
+article p {color: #00ff;}
+article p {color: #0f0;}
+article p {color: #f00;}
+article p {color: rgb(0, 0, 255);}
+article p {color: rgb(0, 0, 255, 0.5);} /* l'ultimo valore è l'oapacità */
+
+/* font */
+section p {font-family: 'Courier New', Courier, monospace; }
+/* Arial, verdana, helvatica, georgia , time new roman, tahoma */
+
+#secondo {
+    font-size: 1.1me;
+    font-style: italic;
+    font-weight: bold; /* grassetto valore di default normal */
+    line-height: 1.5; /* valore da 0 in su */
+}
+div p {
+    color: #00f;
+    text-align: justify;
+}
+div h1 {
+    text-shadow: 4px 4px 12px #666;
+    /*
+    1ò valore -> spostamento orizzonatle
+    2ò valore -> spostamento verticale
+    */
+}

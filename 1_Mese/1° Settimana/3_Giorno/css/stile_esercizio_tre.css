@@ -1,0 +1,57 @@
+
+header{text-align: center;
+}
+
+.logo_centrale {
+    width: 130px;
+}
+
+header p {color: blue;
+    border-top: 1px solid;
+    border-color: brown;
+    padding: 20px;
+}
+
+#contenitore_di_main{
+    width: 720px;
+    margin: 0 auto;
+}
+
+.focaccia{
+    /*width: 500px;*/
+}
+
+#centralizzatore_di_pag{
+    text-align: center;
+    
+}
+
+main figcaption{
+    color: grey;
+}
+
+#riga_sinistra {
+    color: orangered;
+    /*text-align: left;*/
+    border-left: 1px solid;
+    border-color: yellow;
+    padding-left: 10px;
+}
+
+main a{
+    color: aquamarine;
+    /*border-left: 1px solid;
+    border-color: yellow;
+    padding-left: 10px;*/
+}
+
+.titolo_terziario{
+    border-bottom: 1px solid skyblue;
+    padding-bottom: 10px;
+}
+
+#prima_lista_unordered{
+    
+}
+
+

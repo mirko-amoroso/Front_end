@@ -1,0 +1,58 @@
+#contenitore{
+    width: 1024px ;
+    border: 1px solid #000; /* sennò :border style=solid, border color=nero*/
+    margin: 0 auto; /* devaice */
+    /*
+    1valore -> su tutti e 4 i lati
+    2valori -> 1ò sopra/sotto 2ò dx/sx
+    3valori -> 1ò sopra 2ò dx/sx 3òsotto
+    4valori -> top right botton left
+    */
+}
+/***************** - HEADER - *****************/
+header{
+    background-color: gray;
+    padding: 2em;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: aquamarine;
+}
+nav{
+    background-color: aquamarine;
+    padding: 30px;
+}
+nav ul {
+    list-style-type: none; /* leva i puntini della lista */
+}
+nav li {
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+nav a {
+    color:#000;
+    text-decoration: none;
+    display: block;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: red;
+    background-color: blueviolet;
+}
+
+/************* - parte centrale - *************/
+main{padding: 10px;}
+.sx {
+    float: left;
+    padding: 10px;
+    width: 300px;
+    height: 50px;
+}
+article p {
+    text-align:justify;
+}

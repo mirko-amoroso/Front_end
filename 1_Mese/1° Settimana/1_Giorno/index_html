@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en"> <!--lingua del linguaggio o delle proprietà html è il TAG padre di tutti gli altri-->
+<head> <!-- metto le informazioni ausiliari -->
+    <meta charset="UTF-8"> <!--il coding, meta è un TAG empty ovvero non chiude-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" qui va la descrizione della pagina">
+    <title>La mia prima pagina web</title> <!-- nella sezione <title> comparirà il titolo della pagina web-->
+</head>
+<body> <!-- nel TAG body inserisco i TAG che voglio vengano PARSATI (mostrati a video) dal broswer-->
+    <!-- possono scrivere i TAG dell'HTML con spaziature a piacere, con lo scopo di mantenere il codice ordinato-->
+    <h1>titolo principale</h1>
+    <h2>titolo secondario</h2>
+    <h3>altro titolo</h3>
+    <!--h sta per heading (intestazione), possono andare da h1 a h6
+    tutti i TAG h sono elementi di blocco-->   
+                                        <!--occupano tutto lo spazio orizzonatale
+                                        si posizionano uno sotto l'altro-->
+    <p>il TAG p si utilizza per formattare un paragrafo di testo, anche il TAG p è un tag di blocco</p>
+    <p>se inserco un'altro paragrafo questo si posizionerà a capo</p>
+    <!--le liste o elnchi puntati sono di due tipi: ordinate e non ordinate-->
+    <ol type="a"><!--lista ordianta-->
+                <!--con type modifico il valore della lista-->
+        <li>primo elemnto</li><!--list item ovvero singolo elemento, è molto importante imparare a indentare il codice-->
+        <li>secondo elemento</li>
+        <li>terzo elemento</li>
+    </ol>
+    <ul type="square"> <!--unordered list ovvero lista non ordinata-->
+                <!--con type modifico il valore della lista: default= circle-->
+        <li> scrivo il codice</li>
+            <li>aggiungo i nuovi TAG</li>
+        <li>salvo il file</li>
+        <li>ricarico il browser per vedere gli aggiornamenti</li>
+    </ul>
+    <dl> <!--description list ovvero descrizione lista-->
+        <dt>HTML</dt>
+        <dd>linguaggio di marcatura semantica</dd> <!--description data-->
+        <dt>CSS</dt>
+        <dd>linguaggio di formattazione</dd>
+        <dt>BROWSER</dt>
+        <dd>software per la navigazione</dd>
+    </dl>
+    <!--importante i TAG hanno caratteri di default: colore, dimensione, font, eventuali elemneti a sinistra-->
+    <andress>TAG semantico: ci dice che in questa porzione di codice ci sono informazioni di contatto</andress>
+    <address> via milano 1 - 2000 roma</address> <!--di default lo scrive in corsivo-->
+    <blockquote cite=www.michiamociao.org> tag che racchiude una citazione, con relativo riferimento </blockquote>
+    <!--caratteri speciali-->
+    <!-- si apre con & e si chiude con ;-->
+    <!-- servono a sostituire caratteri che hanno un significato diverso dentro HTML-->
+    <p>3 è &lt; di 4</p>
+    <p> HTML &amp; CSS</p>
+    <p>&quot; doppio apice</p>
+    <p> lo spazio bianco è un carattere &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; speciale </p>
+    <p>&euro; euro</p>
+    <!--questi precedenti sono solo elemnti di blocco, ovvero TAG che vanno automaticamente a capo-->
+    <!--elementi inline sono i TAG che si inseriscono uno accanto all'altro-->
+    <span> se inserisco questo TAG</span>
+    <span> si mettono attaccati</span> <!--utilizando questo TAG posso scrivere dei testi uno accanto all'altro-->
+    <p>se scrivo b <b>queste parole in grassetto</b> le parole compaiono in grasseto <!--b sta per bold-->
+        oltre a b si può utilizzare anche storng <strong> queste parole sono in grassetto </strong> sono anche importanti <!--grassetto e rilevanti-->
+        possiamo mettere delle parole in <i>corsivo</i> o segnare delle parole come <em>in corsivo importanti</em>
+        questi tag seguono le regole del W3C aggiornati al <del>2014</del> <ins>2024</ins> 
+    </p>
+    <p> questo è un paragrafo inserito in un tag <abbr title="hyper text markup language"> HTML</abbr>
+        grazie al TAG <code>&lt;p&gt;</code> posso inserire dei paragrafi. posso evidenziare dei contenuti anche con <mark>mark</mark>
+    </p>
+
+    <!--+++++++++++++++ INSERIRE IMMAGINI +++++++++++++++-->
+    <img src="C:\Users\mirko\OneDrive\Desktop\Corso Epicode\1° Settimana\1° Giorno\IMG\img_orca.jpg" alt="un'orca che esce dall'acqua">
+    <!--img è un tag empty , src è un attributo necessario -> percorso relativo all'immagine
+    alt-> è un testo alternativo che descrive l'immagine
+    width/height -> ci permette di modificare l'immagine, di norma non si fa mai
+    formati possibili: jpg, jpeg, png, apng, gif, svg, webp-->
+
+    <!--TAG semantici per le immagini-->
+    <figure> <!-- tag che permette di capire che c'è un codice di immagine-->
+
+        <figcaption> con figcaption metto delle didascalie alla foto</figcaption>
+    </figure>
+
+    <!--https://it.semrush.com/blog/lista-tag-html/-->
+</body>
+</html>

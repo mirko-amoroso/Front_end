@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <form method="get|post" action="#" > <!-- form è il TAG parent di tutti i tag form-->
+                                        <!--method indica il metodo con cui verranno passati i dati-->
+                                        <!--action indica che cosa fa il form-->
+        <fieldset>                      <!-- serve a raccogliere un set di campoi form-->
+            <legend>Anagrafica</legend> <!--- fornisce una leggenda a un particolare set di campi-->
+            <label for="username"> Nome Utente: </label> <!--etichetta: descrivr i campi form ( serve a migliorare l'accessibilità)-->
+            <input type="text" name="username" placeholder="Username"> <!-- TAG inline-->
+            <br>
+            <label for="password"> Password: </label>
+            <input type="password" name="password" placeholder="Password">
+            <br>
+            <label for="email"> E-mail: </label>
+            <input type="email" name="email" placeholder="xxxxxxxx.xxxxx999@gmail.com">
+            <br>
+            <label for="date"> Inserisci Una Data: </label>
+            <input type="date" name="data">
+            <br>
+            <label for="anni">Anni</label>
+            <input type="number" name="anni" min="0" max="99">
+            <br>
+            <label for="orario"> Orario</label>
+            <input type="time" name="orario">
+            <br>
+            <label for="cv"> carica il curriculum</label>
+            <input type="file" name="file">
+            <br>
+            <label for="avanzamento lavoro"> Range</label>
+            <input type="range" name="range" min="0" max="100" value="10" step="5">
+            <br>
+            <label for="nascosto"> campo nascosto</label>
+            <input type="hidden" name="nascosto">
+            <!-- altri tipi di type: tel, month, weeek, image, color-->
+            <br>
+            <label for="autorizzo"> autorizzo al trattamento dei dati persnali</label>
+            <input type="checkbox" name="auturizzo" checked> <!-- spunta automatica-->
+            <br>
+            <!-- attributi dei campi-->
+            <label for="Utente">inserisci il tuo utente</label>
+            <input type="text" required> <!-- reuired serve per indicare un campo obligatorio-->
+            <br>
+            <label for="utente premium">Utente premium</label>
+            <input type="text" placeholder="passa a premium" disabled> <!-- campo disabilitato-->
+            <br>
+            <label for="punteggio">votazione</label>
+            <input type="text" readonly value="7"> <!--redonly il campo è in sola lettura-->
+        </fieldset>
+        <fieldset>
+            <legend>info ulteriori</legend>
+            <label>lascia un commento</label>
+            <textarea name="commento" placeholder="inserisci il tuo commento" rows="5" cols="80"></textarea>
+            <br>
+            <br>
+            <!-- scete multiple: select-->
+            <label for="provincia"> scegli la provincia</label>
+            <select name="provincia">
+                <option value="">--</option> <!-- il primo è vuoto per non dare un valore pre-selezionato-->
+                <optgroup label="Lombardia">
+                    <option value="RO">Roma</option>
+                    <option value="CI">Civitavecchia</option>
+                    <option value="LA">Latina</option>
+                </optgroup>
+            </select>
+            <br>
+            <!-- scelte multiple altro modo-->
+            <label for="domanda_1">che cos'è un tag body:</label> <br>
+            <input type="radio" name="domanda_1" value="0"> è un attributo css<br>
+            <input type="radio" name="domanda_1" value="0"> è un variabile js<br>
+            <input type="radio" name="domanda_1" value="1"> è un tag html<br>
+        </fieldset>
+        <!-- chiudiamo il form-->
+        <button type="submit">invia il form</button>
+        <button type="reset">cancella i dati</button>
+        <input type="submit" value="invia i dati">
+        <input type="reset" value="cancella dari">
+    </form>
+</body>
+</html>

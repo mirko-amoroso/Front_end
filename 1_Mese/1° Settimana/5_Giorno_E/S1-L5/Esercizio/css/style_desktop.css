@@ -1,0 +1,121 @@
+/* Your styles here */
+
+/********* - BODY - *********/
+
+body{
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    /* border: 1px solid #000; me lo definisce */
+}
+
+/********* - HEADER - *********/
+
+#sfondo_nero{
+    background-color: #000;
+}
+
+#logo{
+    width: 120px;
+}
+
+header{
+    background-image: url(../images/banner.jpg);
+    width: auto;
+    margin: auto;
+    height: 235px;
+}
+
+header h1 {
+    color: rgb(55, 55, 255);
+}
+
+header p{
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 5px;
+}
+
+header a{
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.quadrato_arancione {
+    background-color: rgb(220, 60, 2);
+    padding: 8px;
+    /* margin-left: 4px;
+    margin-right: 4px; */
+    color: #fff;
+     /* margin: auto; */
+}
+
+/********* - MAIN - *********/
+
+.titoletti_blu{
+    color: rgb(77, 77, 255);
+}
+
+.parole_dx{
+    margin-left: 20px;
+}
+
+#immagine_rotonda{
+    /* margin-left: 100px; */
+    /* margin-right: 100px; */
+    float:left; 
+    margin-left: 150px;
+    margin-top: 20px;
+    margin-bottom: 20px; 
+    border-radius: 100%;
+    width: 250px;
+    height: 250px;
+    
+}  
+
+#scritta_fine_riquadro_aran {
+    margin-bottom: 30px;
+}
+
+
+.contorno_nero {
+    border: 1px solid #ddd;
+    width: 200px;
+    margin: 50px; 
+    display: inline-block;
+}
+
+#immagine_quadrata_1 {
+    width: 200px;
+    /* float:left;  */
+}
+
+#immagine_quadrata_2 {
+    width: 200px;
+    /* float:center;  */
+}
+
+#immagine_quadrata_3 {
+    width: 200px;
+    /* float:right;  */
+}
+
+/********* - FOOTER - *********/
+
+footer, a{
+    background-color:#25a2c3;
+    color: #fff ;
+    padding-bottom: 4px ;
+}
+
+/* footer a {
+    color: #fff;
+} */
+
+#linea_sopra {
+    border-top: 1px solid #fff;
+    width: 200px;
+    margin:auto;
+    margin-top: 20px;
+}

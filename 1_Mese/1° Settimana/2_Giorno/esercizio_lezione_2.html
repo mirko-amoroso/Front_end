@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="primi passi per creare un modello di pagina HTML per un post. scopri come iniziare in modo facile.">
+    <title>Sviluppo di una pagina web - Blog Epicode</title>
+</head>
+<body>
+    <div id="contenitore_tutto">
+        <div id="contenitore_fase_iniazle"> 
+            <header> <!-- prima parte con: logo=immagine, -->
+                <figure> <!-- immagine-->
+                    <img src="C:\Users\mirko\OneDrive\Desktop\Corso Epicode\1° Settimana\2_Giorno\assets\assets\img\logo.svg" alt="foto del logo">
+                </figure>
+                <h1><b>EPICODE - IL BLOG DEI DEVELOPER </b></h1>
+            </header>
+            <nav> <!-- menu navigazione per "collegare" altri file-->
+                <ul>
+                    <li><a href="#"> HOME </a></li>
+                    <li><a href="#"> ARTICOLI </a></li>
+                    <li><a href="#"> LAVORA CON NOI </a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="contenitore_fase_princpale">
+            <h2><b> Come creare un templare per i post di Mario Rossi <br> Publicato il 25-10-2020 </b></h2>
+            <main> <!--contenuto principale-->
+                <article>
+                    <p>Prima cose da fare è suddividere in blocchi logici la pagina, identificando le parti comuni da applicare a tutte le pagine </p>
+                        <div id="contenitore_lista_ul">
+                            <ul>Le varie aree saranno quindi suddivise in:
+                                <li>Contenuti di intestazine del tag &lt; header &gt;</li>
+                                <li>Contenuti centrali variabili del tag &lt; main &gt; (corpo principale)</li>
+                                <li>Contenuti di fine pagina comuni, da inserire nel tag &lt; footer &gt;</li>
+                            </ul>
+                        </div>
+                    <div id="contenitore_lista_ol"> 
+                        <p> Formattazione del codice </p>
+                        <ol>Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da selezionare con i CSS. perciò i passi saranno:
+                            <li>Progettare il markup assegnando ad ogni specifico testo il tag appropriato</li>
+                            <li>Scrivere l'HTML dai tag esterni a quelli interni e dall'alto verso il basso</li>
+                            <li>Applicare gli stili CSS</li>
+                        </ol>
+                        <p>L'applicazione di stili CSS è cresciuta negli anni fino a raggiungere la diffusione pressochè totale</p>
+                    </div>
+                    <div id="tabbella">
+                        <table border="1" >
+                            <thead>
+                                <Caption> Diffusione dei CSS </Caption>
+                                    <tr>
+                                        <td> Anno </td>
+                                        <td> % di utilizzo </td>
+                                        <td> Supporto Browser </td>
+                                    </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td> 2000 </td>
+                                    <td> 20% </td>
+                                    <td> 17% </td>
+                                </tr>
+                                <tr>
+                                    <td> 2002% </td>
+                                    <td> 35% </td>
+                                    <td> 22% </td>
+                                </tr>
+                                <tr>
+                                    <td> 2004 </td>
+                                    <td> 45% </td>
+                                    <td> 42% </td>
+                                </tr>
+                                <tr>
+                                    <td> 2008 </td>
+                                    <td> 80% </td>
+                                    <td> 51% </td>
+                                </tr>
+                                <tr>
+                                    <td> 2012 </td>
+                                    <td> 100% </td>
+                                    <td> 76% </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="contenitore_link_1"> 
+                        <p>
+                            Un test di validazione potrà essere fatto tramite it tool online <a href="https://epicode.com/it/?" target="_blank"> <i> link esterno </i></a> dedicato allo scopo. <!-- a = link epicode -->
+                            Una volta ottimizzato il tutto, avremo raggiunto il nostro obiettivo ed essre stati dei veri developer come loro: 
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/k-ZXEDMEaew?si=TsZ1k5se3ud-Zz2N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </p>
+                    </div>
+                </article>
+                <div id="contenitore_form">
+                    Vuoi rimanere aggiornato su altre novità del blog?
+                    <form method="#" action="#" >
+                        <fieldset>
+                            <label for="email"> Inserisci l'Email</label>
+                            <input type="email" name="email" placeholder="E-mail">
+                            <br>
+                            <button type="submit"> Invia e Iscriviti! </button>
+                            <!-- <input type="submit" value="invia i dati"> -->
+                        </fieldset>
+                    </form>
+                </div>
+            </main>
+        </div>
+        <div id="contenitore finale">
+            <aside>
+                <h4> Articoli Correlati </h4>
+                <ul style="list-style-type:none;">
+                    Validare il codice HTML 
+                    <li><b> categoria </b> develop </li>
+                </ul>
+                    Data: 18-09-2020
+                <ul style="list-style-type:none;"><b> 
+                    correggere la sintassi </b>
+                    <li><b>categoria</b> develop </li>
+                </ul>
+                    Data: 16-09-2020
+            </aside>
+            <footer> <!--chiudi pagina-->
+                <h4>Blog Epicode &copy; 2023 </h4>
+                <p>Testata di Mario Rossi, registrata con prot. n.213/2018 - via Luigi Enauidi 2 - Milano. P.IVA 00112233.</p><br>
+                <p> <a href="mailto":"info@epicode.school"> info@epicode.school </a></p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
