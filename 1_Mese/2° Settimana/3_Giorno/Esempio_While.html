@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esempio While</title>
+</head>
+
+<body>
+    <p id="tabelline"></p>
+    <script>
+        // voglio stampare i numeri da 0 a 10
+        // devo dire che il numero di partenza è 0
+        // devo controllare che non si superi il valore 10 -> condizione
+        // mentre eseguo  il blocco delle istruzioni DEVO ricordarmi di modificare la condizione
+
+        // let i = 0;
+        // while (i < 10) {
+        //     console.log(i)
+        //     i += 1
+        // }
+
+        // Due cicli while
+        var text = ""
+        var x = 0;
+        var y = 1;
+        while (y <= 10) {  //ciclo esterno della tabellina
+            text += "tabbellina del" + " " + y;
+            y += 1;
+            x = 1
+            text += "<br>" + "<br>"
+            while (x <= 10) { // ciclo interno singola tabellina
+                text += "<br>" + x + "x" + y + "=" + x * y
+                x += 1
+            }
+        }
+
+        document.getElementById("tabelline").innerHTML = text;
+    </script>
+
+    <h2>Do While</h2>
+    <p> rispetto a while che abbiamo visto ha una variante: l'istruzione viene valutata dopo avre eseguito le istruzioni
+        <br>
+        esegue sempre una volta le istruzioni e poi valuto la condizione
+    </p>
+    <p><b>Schema Sintattico di Do While</b></p>
+
+    <script>
+        do (istruzioni)= {
+            //blocco istruzioni
+        }; while (condizione);
+    </script>
+    <h2> Ciclo For</h2>
+    <p></p>
+    <p> Schema sintattico di For</p>
+    <script>
+        for(inizializzazione; condizione; modifica) {
+            // istruzioni
+        }
+        // inizializzazione è l'istruzione che JS esegue prima di avviare il ciclo ( o loop)
+        // condizione è espressione booleana (True | False) che viene eseguita prima di avvaire il ciclo
+        //                                      se è True il blocco di codice viene eseguito
+        //                                      se è false il blocco di codice non viene eseguito
+        //  modifica è l'istruzione che viene eseguita alla fine di ogni ciclo
+        //
+    </script>
+</body>
+</html>

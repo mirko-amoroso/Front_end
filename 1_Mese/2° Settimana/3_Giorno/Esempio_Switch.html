@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio Switch</title>
+</head>
+<body>
+    <!-- https://www.w3schools.com/jsref/jsref_getday.asp -->
+    <script>
+        var day = ""
+        switch (new Date().getDay()) {
+            case 0:
+                day += "oggi è domenica";
+                break;
+            case 1: 
+                day += "oggi è lunedì";
+                break;
+            case 2:
+                day += "oggi è martedì";
+                break;
+            case 3:
+                day += "oggi è mercoledì";
+                break;
+            case 4:
+                day += "oggi è giovedì";
+                break;
+            case 5:
+                day += "oggi è venerdì";
+                break;
+            case 6:
+                day += "oggi è sabato";
+                break;
+        }
+        console.log(day);
+    </script>
+</body>
+</html>

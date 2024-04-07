@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stringhe</title>
+</head>
+<body>
+    <p>Le stringhe hanno un corrispondente predefinito che prevede dei metdi per manipolare le stringhe</p>
+    <p><b>Metodo Length</b></p>
+    <p> La lunghezza della stringa</p>
+    <p id=" demo"></p>
+    <p>metodo replace sostituisce un valore nella stringa con un altro valore</p>
+    <button onlink="my_fuction()">prova</button>
+    <p id="demo_2">vieni a visitare la grecia</p>
+    <P> metodo lowercase e uppercase sostituiscono una stringa con caratteri minuscoli o maiuscoli</P>
+    <button onlink="my_fuction_due()">prova</button>
+    <p id ="demo_3">converto questa scritta</p>
+    <script>
+        //metodo length -> conta quanti parametri ci sono in una stringa
+        let text = "inserisco in una variabile la mia stringa"
+        document.getElementById("demo").innerHTML = text.length     // 41 è il numero dei caratteri nella stringa
+
+        //metodo slice, substring, substr
+        //metodo slice -> estrae una parte di una stringa
+        // let text = "inserisco in una variabile la mia stringa";
+        // let parte = text.slice(10, 16); // due parametri da dove a dove
+        // let parte = text.slice(10);     // un parametro: da doove alla fine
+        // let parte = text.slice(-7, -1)  // parte a contare dal fondo della stringa
+        // substring .substring -> unica differenza con slice e che i valori inferiori a 0 sono uguali a 0
+        // substr .substr -> la differenza la differenza è che il secondo parametro ci dice quante lettere prendere
+
+        //metodo replace
+        function my_fuction() {
+            let text = document.getElementById("demo_2").innerHTML;
+            text.replace("la Grecia", "l'Italia");
+        }
+
+        //metodo lowercase e uppuercase
+        function my_fuction_due() {
+            let text= document.getElementById("demo_3").innerHTML = text.toUpperCase;
+        }
+    </script>
+</body>
+</html>

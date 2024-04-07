@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variabili</title>
+</head>
+<body>
+    <h2>Le variabili</h2>
+    <p>servono a memorizzare dei valori </p>
+    <p>ogni variabile corrispomnde ad un nome che deve seguire delle regole</p>
+    <ul>
+        <li>niente spazi, niente trattini, niente caratteri speciali</li>
+        <li>deve iniziare con una lettera, sono ammessi underscore _ e dollaro $</li>
+        <li> sono case sensitive</li>
+        <li> non può iniziare con un numero</li>
+    </ul>
+    <script>
+        // esempi sule regole di namig delle variabili
+        // keyword per memorizzare dei valori -> var, let, const
+        
+    </script>
+    <h3>dichiarazioni implicita delle variabili</h3>
+    <p>non è obbligatorio dichiarare una variabile, cioè fare una operazione esplicita di creazione <br>
+    quando c'è l'identificazione = l'engine crea implicitamente la variabile se non esiste già
+    </p>
+    <script>
+        var mia_variabile;
+        // quando dichiaro una variabile stabilisco uno scope
+        // lo scope è l'ambito di accesibilità della variabile (cioè in che punto del codice posso usare i valori memorizzati
+        variabile = 3;
+        // una variabile non dichairata si crea al primo utilizzo ed è accessibile ovunque nello script
+        // sconsigliato: quando un codice diventa complesso può succedere di usare in punti diversi variabili con lo stesso nome
+        // -> genere comportamenti imprevisti -> dichiariamo sempre una variabile con la suq keyword 
+    </script>
+
+    <h3>Var, Let, Const</h3>
+    <p>VAR -> è accessibile in qualque parte dello script </p>
+    <p>LET -> è accesibile solo in un determinato ambito (scope) delimitato da un blocco di codice</p>
+    <p>Un blocco di codice js è una seriedi istruzione delimitate da {} </p>
+    <p>CONST -> inserisce l'engine che il valore inserito non è modificabile</p>
+    <script>
+        const PI_GRECO = 3.14;
+
+        var x = 10;
+            {
+                let x = 2  // qui dentro {} x = 2
+            }
+    </script>
+
+    <h3>strict mode </h3>
+    <p> è una opzione di controllo del codice, se viene dichiarato lo strict mode js viene eseguito con regole + stringenti -> ad esempio 
+        se una variabile non viene dichiarata ci viene mostrato errore -> se dichiaro lo strict mode -> regole meno permissive -> stile di programma più strutturato
+    </p>
+    
+</body>
+</html>

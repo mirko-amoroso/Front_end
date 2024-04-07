@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oggetti</title>
+</head>
+
+<body>
+    <h2>Gli Oggetti</h2>
+    <ul>
+        <li>tutto cio che non è dato primitivo è un oggetto</li>
+        <li>gli oggetti rappresentano entità più complesse di singoli dati (numeri, stringhe, boolean...)</li>
+        <li><b>modellazione</b>: uso gli oggettiper rappresentare singole entità </li>
+        <li> un oggetto possiede:
+            <ul>
+                <li>dati, detti <b>proprietà</b> rappresentati da coppie chiave : valore</li>
+                <li>funzionalità detti <b>metodi</b> rappresentati da delle funzioni</li>
+            </ul>
+        </li>
+        <li> per creare un oggeto useremo la <b> rappresentazione letterale </b> definiamo un oggetto a partire dal
+            contenuto</li>
+    </ul>
+</body>
+<script>
+    var oggetto_vuoto = {} //definisc un oggetto vuoto {}, mi preparo ad unare un elemento complesso
+    var persona = {
+        nome: "federico",
+        cognome: "de ambrosis",
+        eta: 43
+    };
+    //coppie chiave valore
+    // sulle chiavi o nomi non ci sono le restrizione di namig che abbiamo per le variabili
+    // se usiamo i caratteri speciali le chiavi o nomi DEVONO essere delimitate da ""
+    var persona2 = {
+        "primo-nome": "federico",
+        "cognome": "de ambrosis",
+        "età": 43
+    }
+    // una proprietà può assumere qualsiasi valore primitivo (stringa, booleano, numero, null), compreso un'altro oggetto
+    var persona3 = {
+        nome: "federico",
+        cognome: "de ambrosis",
+        eta: 43,
+        indirizzo : {
+            via: "pippo",
+            numero: 1,
+            citta: "milano"
+        },
+        data_nascita: 21,
+    };
+    // accedere ad una proprietà dell'oggeto
+    var nome = persona, nome;  // accedo alla proprita nome dell'oggeto persona
+    // noi utilizziamo la dot notation è la modalità standard per accedere a una proprietà di un oggetto 
+    var nome2 = persona2["primo-nome"]; // squere brakets notation
+    var indirizzo = persona.indirizzo // se accedo a una prorpietà non definita -> undefined
+
+    //definizione incrementale
+    persona3.sport ; "rugby";     // posso aggiungere proprietà ad un oggetto
+    // gli oggetti sono dinamici, la struttura è flessibile ed è modificabile quando eseguo uno script
+
+    var user = { //parto  da una user vuota
+    user_nome : "federico",     //dati cioè proprietà: coppie nome:valore separate da una  ,
+    user_cognome : "de abrosi",
+    user_eta : 43
+    }
+
+    //eliminare una prorpietà
+    delete user.eta;
+    console.log(user.eta); // undefined
+</script>
+
+</html>

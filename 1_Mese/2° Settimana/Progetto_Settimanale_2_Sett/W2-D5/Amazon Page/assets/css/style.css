@@ -1,0 +1,105 @@
+/* Your styles here */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    width: auto;
+    margin: auto;
+    background-color: #E9EDEE;
+}
+/* sfondo blu */
+.sfondo_blu {
+    background-color:#222F3F;
+}
+
+#grandezza_logo_header{
+    width: 7%;
+}
+
+/* sfondo grigio */
+
+.sfondo_un_po_grigio {
+    background-color: #364759;
+}
+
+div nav a {
+    color : #fff;
+    text-decoration: none;
+    
+}
+
+/* sfondo arancione */
+
+#sfondo_arancione {
+    background-color: #F56600;
+    color : #fff;
+    text-align: center;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+header p {
+    padding: 0.5%;
+}
+
+/* sfondo verde acqua con immagini */
+
+.sfondo_verde_acqua {
+    background-color: #306E63;
+    background-image: url(../images/bg-image.png);
+    background-image: url(../images/bg-image.png);
+    margin: 2%;
+    text-align: center;
+    padding: 1.5%;
+    color: #fff;
+}
+
+/* MAIN */
+
+#contorno_bianco {
+    background-color: #FFFFFF;
+    margin: 2%;
+    text-align: left;
+}
+
+.immagini_rotonde_in_linea {
+    height: 16em;
+    width: 14em;
+    border-radius: 12%;
+    display: inline-block;
+    /* padding: 1.8%;  */
+    box-shadow: 16px 9px 4px #E9EDEE;
+    margin: 3%;
+}
+
+.link_blu_1 {
+    color: #24697C;
+    text-decoration: none;
+}
+
+.immagine_tutto_schermo {  
+    width: 96%;
+    margin: 2%;
+}
+
+#centra_testo {
+    text-align: center;
+}
+
+.link_blu {
+    color: #24697C;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* FOOTER */
+
+footer div {
+    text-align: center;
+}
+
+footer div a {
+    color: #fff;
+}
+
+#grandezza_logo_footer {
+    width: 10%;
+}

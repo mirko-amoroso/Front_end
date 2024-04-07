@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logica Condizionale</title>
+</head>
+<body>
+    <h2> Logica Condizionale </h2>
+    <p>qualsiasi nostro script è una sequenza di istruzione vengono eseguite dall'engine javascript<br>
+        tutte le nostre istruzioni (quello che scriviamo nei nostri) sono un flusso di comandi<br>
+        l'insieme dei comandi che scriviamo porta la nostra pagina web da uno stato iniziale a uno stato finale, con il flusso dei comandi
+        possiamo far ragiungere un certo risultato<br> avremo bisogno di istruzioni per stabile il flusso di esecuzioni di un programma
+    </p>
+    <h3>blocco codice </h3>
+    <p> Le istruzioni vengono raccolte in blocchi che fungono da singole istruzioni.
+        i blocchi di codice ci permettono di eseguire più istruzioni interamente<br>
+        tipico della logica condizionale è eseguire dei blocchi di codice in seguito alla valutazione di una condizione<br> 
+        <b>un blocco di codice è racchiuso da parentisi graffe {}</b>
+    </p>
+    <script>
+        {  // esempio di blocco di codice -> è racchiuso tra parentisi graffe 
+            x = x + 3;
+            y = x + 3;
+        }
+    </script> 
+    
+    <p> la <b> logica condizionata </b> è una categoria di istruzioni che consentono di eseguire blocchi di codice sulla base della verifica di una condizione 
+        Lo script "decide" se eseguire il blocco di codice, la decisione è basata sulla verifica di una condizione
+    </p>
+    <p> JS prevede due istruzioni condizinali </p>
+    <ul> 
+        <li> if </li>
+        <li> switch </li>
+    </ul>
+    <p> <b> il costrutto if prevede tre forme diverse </b></p>
+    <ul> 
+        <li> if semplice </li>
+        <li> if con alternativa (if, else)</li>
+        <li> if a cascata (if, else.. if, else) </li>
+    </ul>
+
+    <h3> if semplice</h3>
+    <p> la forma <code> if </code> semplice esguire <b> blocco di codice</b> solo se una condizione è vera <br> 
+        se la condizione non è vera il blocco di codice non viene eseguito.    
+    </p>
+    <p><b> schema sintattico del costrutto if semplice</b></p>
+    <script>
+        if(condizione) {    //condizione restituisce una espressione booleana true | false 
+        }
+        //esempio if semplice:
+        if(x >= 37) {
+            messaggio  = "hai la febbre.\n"
+            messaggio += x
+        }
+    </script>
+
+    <h3>If ... else </h3>
+    <p>in questa forma viene eseguito un blocco di codice oppure un'altro blocco di codice in base al valore della co dizione</p>
+    <p><b> schema sintattico</b></p>
+    <script>
+        if (condizione) {
+            //istruzioni
+        } else {
+            //istruzioni 2
+        } // condizione true entra nell'if
+         // condizione false entra nell'else
+         if (x % 2 ==0) {
+            messaggio_2 = x + "è pari"
+         } else {
+            messaggio_3 = x + "è dispari"
+         }
+    </script>
+    <h3>if a cascata</h3>
+    <p> mette a disposizioni più condizioni</p>
+    <p><b>ecco lo schema sintattico</b></p>
+    <script>
+        /*
+        if(condizione_1) {
+            //istruzione
+        } else if (condizione_2) {
+            //istruzione 2
+        } else{
+            //istruzione 3
+        }
+
+        if(x%2 == 0) {
+            messaggio_4 = x + "è pari"
+        } else if (x%2 == 1) {
+            messaggio_5 = x + "è dispari"
+        } else {
+            messaggio_6 = x + "non è un numero"
+        }
+        */
+        let saluto = new Date(); // new è un costruttore 
+        // con new posso cosruire un nuovo array -> new array, così come posso costruire altri elemnti sintattici (ogget, ecc.)
+
+        let orario = saluto.getHours();
+        if ((orario > 0o6) && orario <=12) {
+            document.write("Buon Giorno")
+        }
+        if ((orario > 12) && (orario <=18)) {
+            document.write("Buon pomeriggio")
+        }
+        if ((orario > 18) && (orario <=24)) {
+            document.write("Buona Sera")
+        }
+        if ((orario > 0o0) && (orario <=0o6)) {
+            document.write("Buon Notte")
+        }
+
+    </script>
+
+    </script>
+</body>
+</html>

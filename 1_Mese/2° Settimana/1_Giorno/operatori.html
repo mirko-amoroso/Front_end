@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operatori</title>
+</head>
+<body>
+    <h2>Operatori</h2>
+    <p>tramite degli operatori posso cobinare valori tra di loro </p>
+    <script>
+        x + 1; //è un'espressione che combina la variabile x con il valore 1 tramite l'operazione +
+                // ittine l'incremento di un'unità di x
+    </script>
+    <p> gli operatori determinano il risultato di un'operazione</p>
+    <p>clssificazione degli operatori in base al numero di valori che possono combinare: unaru, binari, ternario</p>
+    <h2>operazioni aritmetiche</h2>
+    <p>operatori binari perche combinano due valori (numerici)</p><br>
+    + addizione <br>
+    - sottrazione <br>
+    / divisione <br>
+    * moltiplicazione <br>
+    % resto <br>
+
+    <p>gli operatori aritmetici possono anche essere unari, cioè combinano un solo valore</p>
+    ++ incremento<br>
+    -- decremento <br>
+    - negazione -> -x = -5
+    se ci sono due valori - è sottrazione, se c'è un solo valore - è negazione<br>
+
+    -> incremento e decremento possono essere applicati solo a delle variabili<br>
+    -> la posizione dell'operatore 
+    -> se l'operatore è a sinistra dell'operando l'operazione viene eseguita prima di valuatare l'espressione<br>
+    -> se l'operatore è a destra dell'operando l'operazione viene eseguita dopo
+    <script>
+        var x = 3;
+        var y = ++x; // a sx -> valuto prima -> viene incremenatat di 1 e il risultato assegnato a y
+                    // x = 4 | y = 4
+
+        var x = 3;
+        var y = x++ // a dx -> valuto dopo -> viene incremeassegnato a y  e solo dopo viene incrementato
+                    // x = 4 | y = 3
+    </script>
+    <h3> operatori logici</h3>
+    <p> consento di combinare espressioni booleane (true | false)</p> <br>
+    && -> operatore binario -> and<br>
+    || -> operatore binario -> or<br>
+    ! -> operatore unario -> not <br>
+    <script>
+        /*
+        5 > 2 && 3 != 4 //true
+        !5 === 5 //false
+        = -> assegnazione 
+        == -> valore uguale 
+        === -> strettamente uguale sia nel valore che nel tipo di dato
+            -> 5 e "5" sono uguali come valore ma non come type
+        != -> diverso
+        */
+    </script>
+
+    <h3> operatore terniario</h3>
+    <p> perette di combinare tre dati tra di loro . restituisce un valore in base alla valutazione di un'espressione booleano<br>
+        sintassi: condizione? valore1 : valore2<br>
+        verifico se la condizione è vera (true | false) -> se è true restituisce valore1 senno valore2
+    </p>
+
+    <script>
+        var utente_abilitato = true;
+        (utente_abilitato) ? console.log("utente abilitato") : console.log("utente non abilitato");
+    </script>
+
+    <h3>operatori relazionali</h3>
+    <p> utilizzat per confrontare dei valori</p>
+    <table>
+        <tr><th>operatore </th><th>none</th></tr>
+        <tr><td> &gt; </td><td> Maggiore </td></tr>
+        <tr><td> &lt; </td><td>Minore </td></tr>
+        <tr><td> >= </td><td> Maggiore o Uguale </td></tr>
+        <tr><td> <= </td><td> Minore o Uguale </td></tr>
+        <tr><td> == </td><td> Uguale </td></tr>
+        <tr><td> != </td><td> Diverso </td></tr>
+        <tr><td></td><td></td></tr>
+    </table>
+    <!--typeof mi dice di che tipo è un elemento -->
+    console.log(typeof 45);
+
+</body>
+</html>

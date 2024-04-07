@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stile di dati</title>
+</head>
+
+<body>
+    <h2> Tipi di Dati</h2>
+    <p>JS prevede 5 tipi di dati <strong>Primitivi</strong>: numeri, stringhe, boleani, null, undefined<br>
+        e un tipo di dato <strong>complesso</strong>: gli oggetti
+    </p>
+    <p>qualsiasi altro elemento previsto nel linguaggio js (array, funzioni) sono tipi di dati complessi </p>
+    <p> Negli oggetti noi possiamo inserire delle proprietà (coppie attributo/ valore) e/o metodi(funzioni)</p>
+
+    <h3> Tipo di dato stringa</h3>
+    <p> E' una sequenza di caratteri contenuti in "" o ''.
+        unica regola i delimitatori che chiudono sono gli stessi che aprono.
+    </p>
+
+    <h3>Tipo di dato numerico</h3>
+    <P> senza apici. Esiste un solo tipo di dato per tutto </P>
+    <script>
+        let intero_positivo = 123;
+        let zero = 0;
+        let intero_negativo = -14;
+        let numero_decimale = 0.234; 
+    </script>
+    <p><b>JS è un linguaggio a tipizzazione debole -> non c'è controllo sul tipo di dato</b></p>
+
+    <h3>Tipo di dato Boleano</h3>
+    <p> ha solo due valori possibilti: true | false</p>
+
+    <h3> tipo di valore null</h3>
+    <p> prevede un solo valore possibile: null -> non rientra nei precedenti valori di dato</p>
+   <script>
+        let x = null;  //diverso da stringa vuota "" | diverso da 0
+   </script> 
+
+   <h3>tipo di valore undefined</h3>
+   <p> prevede un solo valore disponibile: undefined. rappresenta un valore che non esiste, non ha assegnato nessun valore (nemmeno null)</p>
+   <script>
+        var mia_variabile;  //undefined
+        var mia_variabile = 1; //tipo di dato numerico
+        var mia_variabile = null; // posso cambiare tipo di dato
+        var mia_variabile = "pippo"; // stringa
+        var mia_variabile = "123"; //stringa
+        var mia_variabile = true;
+   </script>
+
+</body>
+
+</html>
