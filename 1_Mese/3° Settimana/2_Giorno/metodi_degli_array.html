@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodi degli array</title>
+</head>
+<body>
+    <h2>Metodi Degli Array</h2>
+    <p id="demo"></p>
+    <script>
+        let studenti=["Nicola", "Adriano", "Nicola", "Giovanna"];
+        /* metodi già visti*/
+        // length -> conta gli elementi e restituisce un valore
+        let pippo = studenti.length
+        document.getElementById("demo").innerHTML = pippo;   // stampa il numero di elementi nell'array
+        studenti.length = 2                                  // uso length èer stampare solo fino a una posizione
+        document.getElementById("demo").innerHTML = studenti // stampo la array fino alla posizione due
+
+        //push -> aggiunge un elemento in fondo ad una array
+        studenti.push("Morgan", "Luigi")          // aggiunge elemnti in fondo alla lista
+        document.getElementById("demo").innerHTML = studenti
+
+        //pop elimina un elemento dal fondo di una array
+        studenti.pop();
+        document.getElementById("demo").innerHTML = studenti
+
+        //shift rimuove il primo item di una array
+        studenti.shift();
+        document.getElementById("demo").innerHTML = studenti
+
+        //unshift -> aggiunge nuovi item all'inizio dell'array
+        studenti.unshift("davide", "filippo", "flavio");
+        document.getElementById("demo").innerHTML = studenti
+
+        // sort ci permette di ordinare l'array
+        document.getElementById("demo").innerHTML = studenti.sort()
+
+        //reverse ordina una lista al contrario
+        document.getElementById("demo").innerHTML = studenti.reverse()
+
+        //splice -> togliere o aggiungere elementi in qualsiasi posizione
+        // due argomenti obbligatori + argomenti opzionali
+        // 1ò argomento     -> obbligatorio -> la posizione da cui eliminare (o aggiungere) elementi
+        // 2ò argomento     -> obbligatorio -> quanti elementi eliminare 
+        // dal 3ò in poi    -> opzionali -> servono a dire quanti elementi (eventualmente) aggiungere
+        studenti.splice(2, 2);                                  // dalla posizione 2 elimina 2 item
+        document.getElementById("demo").innerHTML = studenti;   // morgan, flavio
+        studenti.splice(2, 0, "sabrina", "salvatore")           // dalla posizione 2 elimina 0 e aggiungi 
+        document.getElementById("demo").innerHTML = studenti;   //flavio,filippo,sabrina,salvatore,Adriano
+
+        //indexOf -> cercare un elemento in un array -> restituisce la posizione
+        let index = studenti.indexOf("sabrina");
+        document.getElementById("demo").innerHTML = index;
+    </script>
+</body>
+</html>

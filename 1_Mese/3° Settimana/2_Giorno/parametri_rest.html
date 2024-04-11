@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parametri Rest</title>
+</head>
+
+<body>
+    <h2>Parametri rest</h2>
+    <p><b>rest</b> in inglese significa resto | restante. Con <code>Paramatro Rest</code> raccogliamo un numero non
+        definito di parametri in un array
+    </p>
+    <p>quando dichairiamo una funzione indichiamo il numero di parametri -> quelli che tendezialmente valorizziamo<br>
+        può capitare in alcune funzioni di vedere n parametri <em>i parametri delle funzioni vengono inseriti in array
+            <code>arguments</code></em><br>
+        con i parametri rest<code>...</code> possiamo racchiudere i parametri di troppo</p>
+    <script>
+        function my_fun(a, b, ...altri_argomenti) {
+            console.log("a", a)
+            console.log("b", b)
+            console.log("altri argometni", altri_argomenti);
+        }
+        my_fun("uno", "due", "tre", "quattro", "cianque", "sei")
+        // a, uno
+        // b, due
+        // altri_argomenti, ["tre", "quattro", "cinque", "sei"]
+
+        function sum(...miei_argomenti) {
+            let total = 0;
+            for(let arg of miei_argomenti) {
+                total += arg
+            }  
+            return arg
+        }
+        console.log(sum(1, 2, 3))  // 6
+        console.log(sum(1, 2, 3, 4))  // 10 
+        console.log(sum(1, 2, 3, 4, 5))  // 15
+    </script>
+    <h3>for ...of</h3>
+    <p><code>for ...of</code> è una variante del ciclo <code>for</code> che esegue un loop su dei valori che vengono da
+        un oggetto iterabile
+        (array ad esempio)
+    </p>
+    <p>Sintassi -> dichiaro il singolo elemento della collezione</p>
+    <script>
+        let array_1 = ["a", "b", "c", "d"]
+        for (let elemento of array_1) {
+            console.log(element);
+        }
+    </script>
+</body>
+
+</html>

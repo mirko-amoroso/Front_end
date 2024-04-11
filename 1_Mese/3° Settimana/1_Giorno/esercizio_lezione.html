@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio Lezione</title>
+</head>
+<!-- cambiare il colore del testo e del background-->
+<body>
+    <plot>modifica colore testo</plot>
+    <button onclick="funzione_cambio_stile">cambia lo stile</button>
+    <style>
+        .style_uno {background-color: coral; color:white}
+        .style_due {background-color: black; color:white}
+        .style_tre {background-color: yellow; color:green}
+    </style>
+    <script>
+        function funzione_cambio_stile() {
+            let elemento_body = document.querySelector("body");
+            if (elemento_body.className == "style_uno")
+            elemento.classList.add()
+        }
+    </script>
+
+    <!--ESERCIZIO DEL PROF-->
+    <style>
+        .first {background-color: red; color: white;}
+        .second {background-color: black; color: grey;}
+        .third {background-color: green; color: gold;}
+    </style>
+    <span>Il colore del testo cambia</span>
+    <button id="change_btn" onclick="myFunction()">Change color</button>
+    <script>
+        var classiCSS = ['first', 'second', 'third']; // .css
+        var currentIndex = 0;
+
+        const myFunction = function() {
+            let selectBody = document.querySelector('body');
+            switch (classiCSS[currentIndex]) {
+                case 'first':
+                    selectBody.className = 'first';
+                    break;
+                case 'second':
+                    selectBody.className = 'second';
+                    break;
+                case 'third':
+                    selectBody.className = 'third';
+                    break;
+            }
+            currentIndex = (currentIndex + 1) % classiCSS.length;
+        }
+    </script>
+</body>
