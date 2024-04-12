@@ -33,7 +33,7 @@ const colora_cella = (numero_random) => {
 const generateRandNumber = function () {
     const numero_random = getRandomNum()     // stampare il numero
     const cella_numero = document.getElementById("numero_uscito");   // associare la classe...
-    cella_numero.innerHTML= numero_random
+    cella_numero.innerHTML= numero_random  //scrivo il numero uscito
     colora_cella(numero_random)
 }
 const bottone = document.querySelector("#bottone_1")

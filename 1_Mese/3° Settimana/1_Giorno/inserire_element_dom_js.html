@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inserire elementi nel DOM</title>
     <style>
-        #myDIV { background-color: #ccc; padding: 20px;}
+        #myDIV {
+            background-color: #ccc;
+            padding: 20px;
+        }
     </style>
 </head>
+
 <body>
     <h1>Inserire elementi nel DOM via javascript</h1>
     <p>Creare un paragrafo p con del testo e inserirlo</p>
@@ -45,7 +50,7 @@
         // creo un tag e lo inserisco in un div
         let paragrafodue = document.createElement("p");
         paragrafodue.innerHTML = "Questo è un <b>paragrafo</b>" // innerHTML inserisce dei testi con formattazione
-        document.getElementById("myDIV").appendChild(paragrafodue); 
+        document.getElementById("myDIV").appendChild(paragrafodue);
 
         // ! con appendChild inserisco sempre il tag in fondo al contenitore
         // posso creare e assegnare il contenuto separatamente
@@ -65,16 +70,16 @@
         newNode.appendChild(textNode);                                  // appendo textNode al mio <li>
         let list = document.getElementById("myList");                   // inserisco in myList
         list.insertBefore(newNode, list.children[0]);                   // children perché li è figlio di ul 
-        
+
         // replaceChild
         // uso replaceChild per sostituire un determinato valore della mia lista
-        function myFunction_weekend(){
+        function myFunction_weekend() {
             // seleziono il primo elemento di una lista -> entro nella ul -> mi faccio dare il primo children
             let element = document.getElementById("myList").children[0];
             // creo un nuovo testo
             let sabato = document.createTextNode("vado al mare");
             // sostituisco
-            element.replaceChild(sabato, element.childNodes[0]);    
+            element.replaceChild(sabato, element.childNodes[0]);
         }
 
         // Remove
@@ -83,6 +88,7 @@
             let miop = document.getElementById("demo");
             miop.remove();
         }
-</script>
+    </script>
 </body>
+
 </html>
