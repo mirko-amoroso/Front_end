@@ -1,0 +1,238 @@
+/* ++++++++++++ -  SEZIONE PRIMA PAGINA - ++++++++++++ */
+body {
+    background: #0b113b;
+    background-image: linear-gradient(120deg, #0b113b, 0%, #0b113b, 50%, #732c74, 60%, #401857 65%, #732c74 70%, #561e67 75%, #732c74 80%, #391459 85%, #0b113b 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+#prima_pagina {
+    padding-left: 12%;
+}
+
+*:not(h1, strong) {
+    /*  tutti i testi tranne gli h1 */
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 16px;
+}
+
+
+img {
+    padding-top: 2%;
+    width: 15%;
+}
+
+h1 {
+    padding-top: 3%;
+    margin: 0;
+    font-weight: 450;
+    font-size: 60px;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: 80%;
+
+}
+
+#Instructions {
+    color: #d20094;
+    font-size: 2rem;
+    margin-bottom: 1%;
+    margin-top: 5%;
+}
+
+#PIstruzioni {
+    margin-top: 0px;
+    padding-bottom: 2%;
+}
+
+ul {
+    padding-left: 2%;
+    line-height: 150%;
+}
+
+.difficolta {
+    margin-top: 20px;
+}
+
+#conferma {
+    margin-top: 3%;
+}
+
+input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+}
+
+#Termini {
+    padding-right: 10vW;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#bottoncino_conferma {
+    float: right;
+    margin-right: 28rem;
+    margin-bottom: 12rem;
+}
+
+.BottoneProceed {
+    padding: 1.5em;
+    background-color: #00FFFF;
+    color: #000;
+    font-weight: bold;
+    border-style: inset;
+    border-width: 0;
+    box-shadow: 0px 0px 25px #0099a0;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+/* ++++++++++++ -  SEZIONE SECONDA PAGINA - ++++++++++++ */
+
+#contenitore_di_tutto {
+    text-align:center;
+    padding-left: 10%;
+    width: 80%;
+}
+
+.bottoni_risposte {
+    cursor: pointer;
+    background: #980aa559;
+    width: 13rem;
+    border-color: #fff;
+    padding: 1rem;
+    color: #fff;
+    margin: 1rem;
+    border-radius: 50px;
+}
+
+.bottoni_risposte:hover {
+    background-color: #980aa5;
+}
+
+div #domanda{
+    font-size: 2.5rem;
+}
+
+#numero_domanda {
+    margin-top: 8rem;
+
+}
+
+#colore_del_dieci {
+    color: #d20094;
+}
+
+
+/* ++++++++++++ - SEZIONE TIMER PAG.2 - ++++++++++++ */
+
+/* Settiamo l'altezza e la larghezza del cerchio */
+#timer {
+    text-align: -webkit-right;
+    margin-right: 50px;
+}
+
+/*Impostazioni grafiche del timer*/
+
+.base-timer {
+    position: relative;
+    height: 125px;
+    width: 125px;
+}
+
+/* Rimuovo lo sfondo e i bordi del cerchio */
+.base-timer__circle {
+    fill: none;
+    stroke: none;
+}
+
+/* Parte di SVG che indica il bordo */
+
+
+.base-timer__path-elapsed {
+    stroke-width: 7px;
+    stroke: green;
+}
+
+/* .cerchio_base {
+    stroke-width: 7px;
+    stroke: #fff;
+} */
+
+.base-timer__path-elap {
+    stroke-width: 7px;
+    stroke: red;
+}
+
+.base-timer__label {
+    position: absolute;
+
+    /*La dimensione dev'essere uguale alla dimensione del container*/
+    width: 125px;
+    height: 125px;
+
+    /* Keep the label aligned to the top */
+    top: 0;
+
+    /* Create a flexible box that centers content vertically and horizontally */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Sort of an arbitrary number; adjust to your liking */
+    font-size: 24px;
+}
+
+/* ++++++++++++ - SEZIONE PAGINA TRE - ++++++++++++ * */
+
+ #pagina_tre {
+    text-align: center;
+}
+
+#titolo_risultato {
+    font-size: 2.5rem;
+}
+
+#sotto_titolo, #superato_o_no {
+    font-size: 2.5rem;
+}
+
+
+#risultati_positivi, #cerchio_risultati, #risultati_negativi  {
+    display: inline-block;
+}
+
+.risultati {
+    margin-bottom: 2rem;
+    font-size: 40px;
+}
+
+#area_bottone{
+ margin-top: 6rem;
+}
+
+
+#lista_risposte {
+    margin-top: 6rem;
+    text-align: left;
+    margin-left: 4rem;
+}
+
+dt {
+    font-size: 20px;
+    margin-bottom: 0.5rem ;
+    border-top: 1px solid #d20094;
+    padding-top: 0.5rem;
+}
+
+dd {
+    margin-bottom: 1.5rem;
+    font-size: 15px;
+    color: rgb(255, 0, 238);
+}

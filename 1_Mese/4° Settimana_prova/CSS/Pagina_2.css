@@ -1,0 +1,72 @@
+body, button{
+    background-image: url(../Info_pag/assets/bg.jpg);
+    background-size: cover; 
+    color: #fff;
+}
+
+/* img {
+    width: 135px;
+    margin: 2rem;
+} */
+
+.bottoni_risposte{
+    cursor: pointer;
+    background: transparent;
+    width: 8rem;
+    border-color: #fff;
+    padding: 1rem ;
+}
+
+/* ++++++++++++ - SEZIONE TIMER - ++++++++++++ */
+
+/* Settiamo l'altezza e la larghezza del cerchio */
+#timer{
+    text-align: -webkit-right;
+    margin-right: 50px;
+}
+
+
+/*Impostazioni grafiche del timer*/
+
+
+.base-timer {
+    position: relative;
+    height: 125px;
+    width: 125px;
+  }
+  
+  /* Rimuovo lo sfondo e i bordi del cerchio */
+  .base-timer__circle {
+    fill: none;
+    stroke: none;
+  }
+  
+  /* Parte di SVG che indica il bordo */
+  .base-timer__path-elapsed {
+    stroke-width: 7px;
+    stroke: green;
+  }
+
+  .base-timer__path-elap{
+    stroke-width: 7px;
+    stroke:red;
+  }
+
+  .base-timer__label {
+    position: absolute;
+    
+    /*La dimensione dev'essere uguale alla dimensione del container*/
+    width: 125px;
+    height: 125px;
+    
+    /* Keep the label aligned to the top */
+    top: 0;
+    
+    /* Create a flexible box that centers content vertically and horizontally */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    /* Sort of an arbitrary number; adjust to your liking */
+    font-size: 24px;
+  }
