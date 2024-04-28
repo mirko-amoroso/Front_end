@@ -1,0 +1,222 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #FFC017;
+}
+
+
+/****** - LOGO - *******/
+
+#contenitore_svg {
+    background: url(../imgs/svg/logo.svg) no-repeat center;
+    background-size: contain;
+    width: 100px;
+    height: 40px;
+    margin-left: 3rem;
+}
+
+/* +++++ - NAV BAR - +++++ */
+#contenitore_nav {
+    background-color: #FFC017;
+    display: flex;
+    border-bottom: 1px solid black;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+}
+
+
+header li {
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+.bottone_nav {
+    background-color: black;
+    color: #fff;
+    border-radius: 30px;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+h1{
+    margin:0;
+    font-size: 4rem;
+}
+
+#contenitore_seco_heade p {
+    font-size: 1.3rem;
+}
+
+#border {
+    border-bottom: 1px solid black;
+}
+
+#contenitore_seco_heade {
+    margin-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#contenitore_seco_heade input {
+    margin-bottom: 1rem;
+}
+
+/* +++++ - MAIN - +++++ */
+
+/* +++++ - CONTENIOTRI MAIN CARTE - +++++ */
+#contenitore_tutte_carte {
+    margin: 0 6%;
+}
+
+#contenitore_tutto {
+    border-bottom: 1px solid black;
+}
+
+#contenitore_di_carte {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* +++++ - IMMMAGINI SEZIONE CARTE - +++++ */
+.foto_card {
+    width: 1rem;
+    height: 1rem;
+}
+
+/* +++++ - CARTA - +++++ */
+.card {
+    display: flex;
+    width: 30%;
+    margin-bottom: 1rem;
+}
+
+.info_card {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+
+.numero_card {
+    font-size: 1.5rem;
+    color: rgba(174, 174, 174, 0.679);
+}
+
+
+.ultima_riga_card {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+article p, #contenitore_par_2 p {
+    margin: 0;
+}
+
+.cicciotto {
+    font-weight: bold;
+}
+
+/* +++++ - MAIN SECONDA PARTE - +++++ */
+
+#contenitore_par_2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+}
+
+.info_card_sec{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    width: 70%;
+}
+
+#titolo_parte_destra{
+    text-align: center  ;
+}
+
+#parte_destra {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    border-bottom: 1px solid rgb(162, 157, 157);
+    align-items: center;
+}
+
+.bordo_parola {
+    background-color: #c5c5c5;
+    border-radius: 30px;
+    padding: 8px;
+}
+
+.foto_grande_card {
+    width: 200px;
+    margin-left: 4rem;
+}
+
+.paragrafo {
+    display: flex;
+    width: 50vw;
+}
+
+.bordi_parole {
+    border: 1px solid rgb(162, 157, 157);
+    color: rgb(161, 157, 157);
+    padding: 4px;
+    width: 7.5rem;
+}
+
+.parole_riga {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+}
+
+#colonna {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+#parte_finale{
+    display: flex;
+    justify-content: center;
+    width: 30vw;
+}
+ 
+#parte_finale ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-left:0;
+}
+
+#parte_finale ul li {
+    margin-right: 1rem;
+    color: rgb(161, 157, 157) ;
+}
+
