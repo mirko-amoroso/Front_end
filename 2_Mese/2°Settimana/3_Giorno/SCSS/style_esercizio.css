@@ -1,0 +1,65 @@
+.bottone-rosa {
+  background-color: rosa;
+}
+
+.bottone-arancione {
+  background-color: arancione;
+}
+
+.bottone-verde {
+  background-color: verde;
+}
+
+.margin-sm {
+  margin: 1em;
+}
+
+.margin-normal {
+  margin: 1.5rem;
+}
+
+.margin-md {
+  margin: 1.8rem;
+}
+
+.margin-lg {
+  margin: 2rem;
+}
+
+.margin-xl {
+  margin: 2.3rem;
+}
+
+.margin-xxl {
+  margin: 2.5rem;
+}
+
+.padding-sm {
+  padding: 1em;
+}
+
+.padding-normal {
+  padding: 1.5rem;
+}
+
+.padding-md {
+  padding: 1.8rem;
+}
+
+.padding-lg {
+  padding: 2rem;
+}
+
+.padding-xl {
+  padding: 2.3rem;
+}
+
+.padding-xxl {
+  padding: 2.5rem;
+}
+
+main th, td {
+  border-radius: 0;
+  box-shadow: 10 0 5px;
+  border: 3px dashed green;
+}/*# sourceMappingURL=style_esercizio.css.map */

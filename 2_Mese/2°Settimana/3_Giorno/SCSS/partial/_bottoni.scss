@@ -1,0 +1,12 @@
+$botton_array: (
+  rosa : #ef6cff,
+  arancione: #ff8700,
+  verde: #4caf50
+);
+
+
+@each $color, $valore in $botton_array {
+  .bottone-#{$color} {
+    background-color: $color;
+  }
+}

@@ -1,0 +1,7 @@
+@import 'partial/bottoni';
+@import 'partial/spaziature';
+@import 'partial/mixins_generici';
+
+main th, td {
+    @include floating(0, 10 0 5px, 3px dashed green)
+}

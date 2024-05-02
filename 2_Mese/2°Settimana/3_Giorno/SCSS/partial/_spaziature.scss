@@ -1,0 +1,30 @@
+$padding_array: (
+    sm: 1em,
+    normal:1.5rem,
+    md:1.8rem,
+    lg:2rem,
+    xl: 2.3rem,
+    xxl:2.5rem
+);
+
+$margin_array: (
+    sm: 1em,
+    normal:1.5rem,
+    md:1.8rem,
+    lg:2rem,
+    xl: 2.3rem,
+    xxl:2.5rem
+);
+
+
+@each $margine, $valore in $margin_array {
+    .margin-#{$margine} {
+        margin: $valore;
+    }
+}
+
+@each $padding, $valore in $padding_array {
+    .padding-#{$padding} {
+        padding: $valore;
+    }
+}
