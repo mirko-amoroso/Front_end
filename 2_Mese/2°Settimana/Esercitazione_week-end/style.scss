@@ -1,0 +1,80 @@
+body {
+   overflow-x: hidden;
+   width: 100vw;
+}
+
+#size_img {
+    width: 120px;
+    min-width: 50px;
+}
+
+#avatar_size {
+    width: 8%;
+}
+
+.immagini {
+    margin: 0 1.3rem;
+    @media screen and (min-width: 768px) {
+        margin: 0 2rem;
+    }
+}
+
+footer {
+    img {
+    width: 1.6rem;
+    }
+}
+
+
+
+.testo_piccolo {
+    font-size: 50%;
+
+    @media  screen and (min-width:576px) {
+        font-size: 100%;
+    }
+}
+@media screen and (min-width:576px) {
+    .formattazione {
+        justify-content: start !important;
+    }
+}
+
+.colore_bottone{
+    background-color: #fff;
+    // width: 6rem;
+}
+
+#immagine_avatar {
+    width: 75%;
+    max-width:150px;
+    
+}
+
+#immagine_icona {
+    position:relative;
+}
+
+.icona {
+    position:absolute;
+    bottom: 15px;
+    left: 20px;
+    width: 17px;
+    height: 17px;
+    background: #fff;
+}
+
+#icona_oggetto {
+    width: 10px; /* Imposta la larghezza dell'icona */
+    height: 10px; /* Imposta l'altezza dell'icona */
+    z-index: 1;
+    margin: 0.2rem;
+    margin-bottom: 0.9rem;
+}
+
+.colore_bottone:hover {
+    background-color: white !important; /* Conserva il colore di sfondo predefinito */
+    color: inherit !important; /* Conserva il colore del testo predefinito */
+    text-decoration: none !important; /* Rimuove eventuali sottolineature sul testo al passaggio del mouse */
+    box-shadow: none; /* Rimuove eventuali ombre */
+}
