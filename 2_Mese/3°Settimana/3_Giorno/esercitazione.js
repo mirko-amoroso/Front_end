@@ -9,7 +9,7 @@ const prendo_list_libri = function () {
     fetch('https://striveschool-api.herokuapp.com/books')
         .then((response) => response.json())
         .then((lista_libri) => {
-            const righe = document.createElement("div")
+            let righe = document.createElement("div")
             righe.classList.add("row");
             for (i = 0; i < lista_libri.length; i++) {
                 const card = document.createElement("div")
