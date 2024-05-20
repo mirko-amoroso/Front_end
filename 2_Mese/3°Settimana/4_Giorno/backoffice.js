@@ -46,7 +46,7 @@ const getEventData = function () {
       document.getElementById('description').value = event.description
       document.getElementById('price').value = event.price
       document.getElementById('time').value = event.time.slice(0, -1) // tolgo la "Z" dalla data creata a backend
-
+      console.log(event)
       // salvo una copia di questo event in eventToModify
       eventToModify = event
     })

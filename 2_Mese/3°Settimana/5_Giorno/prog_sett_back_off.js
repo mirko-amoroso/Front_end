@@ -20,7 +20,7 @@ const get_event_data = () => {
     fetch(`http://striveschool-api.herokuapp.com/api/product/${eventId}`,{
         headers: {
             "Content-Type": "application/json",
-            Authorization: `bearer ${token}`
+            "Authorization": `bearer ${token}`
         }
     })
         .then((response) => {
@@ -69,9 +69,10 @@ const evento_submit = function (e) {
         brand_input.value,
         prezzo_input.value,
     )
+    
     console.log('SCARPE DA INVIARE ALLE API', ScarpeFromForm)
 
-    let URL = "https://striveschool-api.herokuapp.com/api/product/"
+    let URL = "https://striveschool-api.herokuapp.com/api/product"
     let methodToUse = 'POST'
 
     console.log(eventId)
@@ -82,13 +83,27 @@ const evento_submit = function (e) {
         console.log("ciao")
     }
     console.log(eventToModify)
+    let prova = {
+        nome : "mirko",
+        description : "amoroso",
+        barnd : "nokia",
+        imageUrl : "ciaocomestai",
+        price : 100,
+            // _id :"smekcnekfekemce",
+            // userId : "cisokxlme",
+            // createdAt : "fjefnenek",
+            // updatedAt :"kdededncejc",
+            // __v : 0
+
+    }
     fetch(URL, {
         // questo oggetto va indicato qualora l'operazione NON sia la default
         // già il fatto che opereremo una POST e non una GET fa in modo che questo secondo parametro vada dichiarato
         method: methodToUse,
-        body: JSON.stringify(ScarpeFromForm), // il body in una request è SEMPRE UNA STRINGA
+        body: JSON.stringify(prova), // il body in una request è SEMPRE UNA STRINGA
+        // body : prova,
         headers: {
-            Authorization: `bearer ${token}`,
+            "Authorization": `bearer ${token}`,
             'Content-type': 'application/json' // informiamo le API che (anche se in formato stringa) stiamo inviando un OGGETTO
             // se avessimo un'API protetta, in questo oggetto headers ci andrebbe anche l'autenticazione:
             // Authorization: 'Bearer xxxxxxxxx'

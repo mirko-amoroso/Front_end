@@ -23,7 +23,7 @@ const generatore_scarpe_card = (arrray_scarpe) => {
 }
 
 const getEvents = () => {
-    fetch("https://striveschool-api.herokuapp.com/api/product/")
+    fetch(" https://striveschool-api.herokuapp.com/api/product/")
     .then((response) => {
       if (response.ok) {
         console.log("daje")
