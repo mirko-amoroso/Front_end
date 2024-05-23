@@ -1,7 +1,31 @@
-<h3 class="text-primary text-center">Post in evidenza</h3>
+<h2 class="text-primary text-center">Post in evidenza</h2>
 
 <div *ngIf="post_array.length > 0">
-  <p>{{post_array[0].title}}</p>
+  <p class="text-center fs-5 fw-medium">{{post_array[0].title}}</p>
 </div>
+
+<h2 class="text-primary text-center">tutti i brani</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">titolo</th>
+      <th scope="col">descrizione</th>
+      <th scope="col">key</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let post of post_array">
+      <th scope="row">{{post.id}}</th>
+      <td>{{post.title}}</td>
+      <td>{{post.body}}</td>
+      <td>{{post.tags}}</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
 
 
