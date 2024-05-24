@@ -1,0 +1,35 @@
+<div class="m-4">
+  <div>
+    <h2>Brand di punta:</h2>
+    <div class="d-flex justify-content-around">
+      <div *ngFor="let logo of array_logo">
+        <div class="card bordo">
+          <img src="{{logo.brandLogo}}" class="card-img-top bordo" alt="...">
+          <a class="nav-link text-center" [routerLink]= "['/',logo.brand.toLowerCase()]">Vai a {{logo.brand}}</a>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h2>Fatti consigliare:</h2>
+      <div class="d-flex justify-content-around">
+        <div class="card size sfondo_colorato">
+          <img src="{{array_mischiato[0].modelImage}}" class="card-img-top w-100" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">{{array_mischiato[0].model}}</h5>
+            <p class="card-text">{{array_mischiato[0].year}}</p>
+            <p class="card-text">{{array_mischiato[0].price}}</p>
+            <a [routerLink]= "['/',array_mischiato[0].brand.toLowerCase()]" class="btn " [class.verde]="array_mischiato[0].available" [class.rosso]="!array_mischiato[0].available">Vai al sito </a>
+          </div>
+        </div>
+        <div class="card size sfondo_colorato">
+          <img src="{{array_mischiato[1].modelImage}}" class="card-img-top w-100" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">{{array_mischiato[1].model}}</h5>
+            <p class="card-text">{{array_mischiato[1].year}}</p>
+            <p class="card-text">{{array_mischiato[1].price}}</p>
+            <a [routerLink]= "['/',array_mischiato[1].brand.toLowerCase()]" class="btn" [class.verde]="array_mischiato[1].available" [class.rosso]="!array_mischiato[1].available">Vai al sito </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

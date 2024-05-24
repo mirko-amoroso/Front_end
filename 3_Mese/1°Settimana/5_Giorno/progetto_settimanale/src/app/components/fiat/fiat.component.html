@@ -1,0 +1,14 @@
+<div class="m-4">
+  <h2>Le migliori Fiat sul mercato</h2>
+
+  <div class="d-flex justify-content-around">
+    <div class="card size sfondo_colorato" *ngFor="let fiat of array_fiat" [class.verde]="fiat.available" [class.rosso]="!fiat.available">
+      <img src="{{fiat.modelImage}}" class="card-img-top w-100" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{fiat.model}}</h5>
+        <p class="card-text">{{fiat.year}}</p>
+        <a href="#" class="btn btn-primary">{{fiat.price}}</a>
+      </div>
+    </div>
+  </div>
+</div>

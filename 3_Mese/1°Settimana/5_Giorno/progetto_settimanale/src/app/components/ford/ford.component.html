@@ -1,0 +1,14 @@
+<div class="m-4">
+  <h2 class="text-center my-3">Le migliori Ford sul mercato</h2>
+
+  <div class="d-flex justify-content-around">
+    <div class="card size sfondo_colorato" *ngFor="let ford of array_ford" >
+      <img src="{{ford.modelImage}}" class="card-img-top w-100" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{ford.model}}</h5>
+        <p class="card-text">{{ford.year}}</p>
+        <a href="#" class="btn" [class.verde]="ford.available" [class.rosso]="!ford.available">{{ford.price}}</a>
+      </div>
+    </div>
+  </div>
+</div>

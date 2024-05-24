@@ -1,0 +1,15 @@
+<div class="m-4">
+  <h2>Le migliori Audi sul mercato</h2>
+
+  <div class="d-flex justify-content-around">
+    <div class="card size sfondo_colorato" *ngFor="let audi of array_audi" [class.verde]="audi.available" [class.rosso]="!audi.available">
+      <img src="{{audi.modelImage}}" class="card-img-top w-100" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{audi.model}}</h5>
+        <p class="card-text">{{audi.year}}</p>
+        <p class="card-text">{{audi.price}}</p>
+        <a href="#" class="btn" [class.verde]="audi.available" [class.rosso]="!audi.available">Vai al {{audi.brand}}</a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -44,14 +44,5 @@ export class HomeComponent {
   //    return numeri;
   //  };
 
-  // random_numero = (): Array<number> => {
-  //   let numeri: Array<number> = [];
-  //   while (numeri.length < 4) {
-  //     let numero = Math.floor((Math.random() + 1) * 30);
-  //     if (!numeri.includes(numero)){
-  //     numeri.push(numero);
-  //   }}
-  //   this.array_numeri = numeri;
-  //   return numeri
-  // };
+  
 }
