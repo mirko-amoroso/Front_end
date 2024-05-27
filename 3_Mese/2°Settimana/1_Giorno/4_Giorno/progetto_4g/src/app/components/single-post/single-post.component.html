@@ -1,0 +1,11 @@
+<div class="container">
+  <h2>Tutti i Post </h2>
+  <div class="card" *ngFor="let post of post_arr_all ">
+    <div class="card-body">
+      <h5 class="card-title">{{post.title}}</h5> <!--title-->
+      <h6 class="card-subtitle mb-2 text-body-secondary">{{post.tags}}</h6> <!-- tags-->
+      <p class="card-text">{{post.body}}</p><!--description-->
+      <ng-content></ng-content>
+    </div>
+  </div>
+</div>
