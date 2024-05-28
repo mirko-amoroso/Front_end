@@ -1,4 +1,4 @@
-import { Component, ElementRef, ContentChild } from '@angular/core';
+import { Component, ElementRef, ContentChild, Input } from '@angular/core';
 import { PostsService } from '../../posts.service';
 import { iPost } from '../models/i-post';
 
@@ -9,19 +9,22 @@ import { iPost } from '../models/i-post';
   styleUrl: './single-post.component.scss',
 })
 export class SinglePostComponent {
-  post_arr_all: iPost[] = [];
+  // post_arr_all: iPost[] = [];
 
   constructor(private post_service: PostsService) {}
 
   ngOnInit() {
-    this.post_arr_all = this.post_service.posts;
+
+    // this.post_arr_all = this.post_service.posts;
+    // @Input() pizzaInput!:{gusto:string, prezzo:number};
   }
+  @Input() post_arr_all!: iPost[]
 
   @ContentChild('inputHome') inputHome!:ElementRef
 
-  ngAfterViewInit() {
-    const elemento = this.inputHome.nativeElement;
-  }
+  // ngAfterViewInit() {
+  //   const elemento = this.inputHome.nativeElement;
+  // }
 }
 
 

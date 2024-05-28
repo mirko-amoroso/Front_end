@@ -15,14 +15,20 @@
 <div class="div container">
   <div class="card" *ngFor="let post of array_di_post">
     <div class="card-body">
-      <h5 class="card-title">{{post.title}}</h5> <!--title-->
+      <h5 class="card-title">{{post.title}}</h5>
       <h6 class="card-subtitle mb-2 text-body-secondary">{{post.tags}}</h6> <!-- tags-->
-      <p class="card-text">{{post.body}}</p><!--description-->
+      <p class="card-text">{{post.body}}</p>
     </div>
   </div>
 </div>
 
 
-<app-single-post>
-  <input #inputHome type="text" placeholder="post">
+<app-single-post [post_arr_all]="post_array" >
+  <form>
+    <div class="form-group">
+      <label for="inputExample">Esempio di Input</label>
+      <input type="text" class="form-control" id="inputExample" placeholder="Inserisci qualcosa">
+    </div>
+  </form>
+  <!-- <input slot="s1" type="text" placeholder="post"> -->
 </app-single-post>
