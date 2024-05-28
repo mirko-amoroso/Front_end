@@ -18,7 +18,7 @@ export class SinglePostComponent {
     // this.post_arr_all = this.post_service.posts;
     // @Input() pizzaInput!:{gusto:string, prezzo:number};
   }
-  @Input() post_arr_all!: iPost[]
+  @Input() post!: iPost
 
   @ContentChild('inputHome') inputHome!:ElementRef
 

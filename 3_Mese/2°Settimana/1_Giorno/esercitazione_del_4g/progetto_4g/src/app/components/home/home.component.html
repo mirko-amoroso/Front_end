@@ -23,12 +23,12 @@
 </div>
 
 
-<app-single-post [post_arr_all]="post_array" >
-  <form>
+<app-single-post *ngFor="let post of post_array" >
+  <div class="d-flex">
     <div class="form-group">
       <label for="inputExample">Esempio di Input</label>
       <input type="text" class="form-control" id="inputExample" placeholder="Inserisci qualcosa">
     </div>
-  </form>
+  </div>
   <!-- <input slot="s1" type="text" placeholder="post"> -->
 </app-single-post>
