@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { TodosService } from '../../service/todos.service';
-import { UsersService } from '../../service/UsersService';
 import { iPostAutore } from '../../modules/post-autore';
+import { UsersService } from '../../service/users.service';
 
 @Component({
   selector: 'app-completed',
@@ -24,6 +24,5 @@ export class CompletedComponent {
   ngOnInit() {
     this.array_completed = this.todos_s_h.get_copleted(this.users_arr);
   }
-
 
 }

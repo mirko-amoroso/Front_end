@@ -959,4 +959,14 @@ export class TodosService {
     });
     return array_completati;
   };
+
+  toogle_todo = (id: number) => {
+    this.todos.forEach((t) => {
+      if (t.id == id) {
+        console.log(t.completed)
+        t.completed = !t.completed
+        console.log(t.completed)
+      }
+    });
+  };
 }

@@ -24,23 +24,9 @@ export class HomeComponent {
     this.array_finale = this.todos_s_h.get_post(this.users_arr);
   }
 
-  // get_post = (): void => {
-  //   this.todos_arr.forEach((todo) => {
-  //     let user_return: iUser | undefined = this.users_arr.find(
-  //       (u) => u.id == todo.userId
-  //     )
-  //       ? this.users_arr.find((u) => u.id == todo.userId)
-  //       : undefined;
-  //     if (user_return !== undefined) {
-  //       this.array_finale.push({
-  //         id: todo.id,
-  //         todo: todo.todo,
-  //         completed: todo.completed,
-  //         userId: todo.userId,
-  //         firstName: user_return.firstName,
-  //         lastName: user_return.lastName,
-  //       });
-  //     }
-  //   });
-  // };
+  toggleStatus_home(id:number){
+    this.todos_s_h.toogle_todo(id)
+    this.array_finale = this.todos_s_h.get_post(this.users_arr);
+  }
+
 }

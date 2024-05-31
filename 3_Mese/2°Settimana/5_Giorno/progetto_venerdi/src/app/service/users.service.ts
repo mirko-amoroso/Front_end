@@ -813,22 +813,22 @@ export class UsersService {
 
   array_finale_users: iCardUser[] = [];
 
-   get_user = (todo: iTodo[]):iCardUser[] => {
-     let array_prova:any[] = []
-     this.users.forEach((user) => {
-        let lista_todo = this.get_todo(todo, user.id)
-        array_prova.push({
-          id: user.id,
-          firstName: user.firstName,
-          lastName: user.lastName,
-          email: user.email,
-          image: user.image,
-          title: user.title,
-           todo: lista_todo
-      })
-     })
-     return array_prova
-   };
+  get_user = (todo: iTodo[]): iCardUser[] => {
+    let array_prova: iCardUser[] = [];
+    this.users.forEach((user) => {
+      let lista_todo = this.get_todo(todo, user.id);
+      array_prova.push({
+        id: user.id,
+        firstName: user.firstName,
+        lastName: user.lastName,
+        email: user.email,
+        image: user.image,
+        title: user.title,
+        todo: lista_todo,
+      });
+    });
+    return array_prova;
+  };
 
   get_todo = (todo_arr: iTodo[], user: number): iTodo[] => {
     let lista: iTodo[] = [];

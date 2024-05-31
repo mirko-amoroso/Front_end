@@ -11,7 +11,7 @@ import { UsersService } from '../../service/users.service';
 export class UsersComponent {
 
   constructor(
-    private users_s_u:UsersService,
+    public users_s_u: UsersService,
     private todos_s_h: TodosService,
   ) {}
 
@@ -22,4 +22,8 @@ array_post_user:iCardUser[] = []
     // console.log(this.array_post_user)
   }
 
+
+  toggleStatus(id:number){
+    this.todos_s_h.toogle_todo(id)
+  }
 }
