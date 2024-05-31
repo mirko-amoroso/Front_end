@@ -1,6 +1,5 @@
 import { iPostAutore } from './../modules/post-autore';
 import { Injectable } from '@angular/core';
-import { UsersService } from './users.service';
 import { iTodo } from '../modules/i-todo';
 import { iUser } from '../modules/i-user';
 
@@ -911,20 +910,20 @@ export class TodosService {
     },
   ];
 
-  array_finale_todos: iPostAutore[] = [];
+  // constructor(private users_s: UsersService) {}
 
-  constructor(private users_s: UsersService) {}
+  // user_s: iUser[] = this.users_s.users;
 
-
-  get_post = (): iPostAutore[] => {
+  get_post = (users: iUser[]): iPostAutore[] => {
+    let array_finale_todos: iPostAutore[] = [];
     this.todos.forEach((todo) => {
-      let user_return: iUser | undefined = this.users_s.users.find(
+      let user_return: iUser | undefined = users.find(
         (u) => u.id == todo.userId
       )
-        ? this.users_s.users.find((u) => u.id == todo.userId)
+        ? users.find((u) => u.id == todo.userId)
         : undefined;
       if (user_return !== undefined) {
-        this.array_finale_todos.push({
+        array_finale_todos.push({
           id: todo.id,
           todo: todo.todo,
           completed: todo.completed,
@@ -933,8 +932,31 @@ export class TodosService {
           lastName: user_return.lastName,
         });
       }
-    })
-    let array_finale:iPostAutore[] = this.array_finale_todos
-    return array_finale
+    });
+    return array_finale_todos;
+  };
+
+  get_copleted = (users: iUser[]) => {
+    let array_completati: iPostAutore[] = [];
+    this.todos.forEach((todo) => {
+      if (todo.completed) {
+        let user_return: iUser | undefined = users.find(
+          (u) => u.id == todo.userId
+        )
+          ? users.find((u) => u.id == todo.userId)
+          : undefined;
+        if (user_return !== undefined) {
+          array_completati.push({
+            id: todo.id,
+            todo: todo.todo,
+            completed: todo.completed,
+            userId: todo.userId,
+            firstName: user_return.firstName,
+            lastName: user_return.lastName,
+          });
+        }
+      }
+    });
+    return array_completati;
   };
 }
