@@ -1,25 +1,24 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule } from '@angular/common/http';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NavbarComponent } from './main_components/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
-import { PreferitiComponent } from './components/preferiti/preferiti.component';
-import { CarrelloComponent } from './components/carrello.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
+import { CompletedComponent } from './components/completed/completed.component';
+import { UsersComponent } from './components/users/users.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    NavbarComponent,
     HomeComponent,
-    PreferitiComponent,
-    CarrelloComponent,
-    NavbarComponent
+    CompletedComponent,
+    UsersComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    HttpClientModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

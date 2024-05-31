@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ServerService } from '../../server.service';
 import { map, Observable } from 'rxjs';
+import { iProduct } from '../modules/i-products';
 
 @Component({
   selector: 'app-home',
