@@ -1,0 +1,15 @@
+<form [formGroup]="form">
+
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Inserisci la tua: Email</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" formControlName="email" placeholder="name@example.com">
+  </div>
+
+  <div class="mb-3">
+    <label for="password" class="form-label">Inserisci la tua: Password</label>
+    <input type="password" class="form-control" id="password" formControlName="password">
+  </div>
+
+  <button (click)="giako()" type="button" class="btn btn-primary">Accedi</button>
+
+</form>

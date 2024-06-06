@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "email": "ciao@come.com",
+      "password": "$2a$10$pFVdyhWe2DbrRUYf./2P1errQJs0ivEWA8qgszJHE/ac3gkEq8xHK",
+      "id": 1
+    },
+    {
+      "email": "ciao@come.con",
+      "password": "$2a$10$czQLC3O6nY5QuO1XfqVAHesd1TLQEUAfNfleWdN2LI58HrtS5z/na",
+      "id": 2
+    },
+    {
+      "email": "giacomino_sei_un_grande@grandissimo.com",
+      "password": "$2a$10$Nidwx6PSoRAK9cs3Owa8/.0Ee5DIpw8/o7PzkEGxYEPWwiBGkWUxm",
+      "id": 3
+    },
+    {
+      "email": "mirko_bello@bellissimo.com",
+      "password": "$2a$10$JexGxTgrNQUwV3ZKI3vm2OLuhuwcfteM6XSUVATZ1x6yv.qJcawMW",
+      "id": 4
+    }
+  ]
+}
