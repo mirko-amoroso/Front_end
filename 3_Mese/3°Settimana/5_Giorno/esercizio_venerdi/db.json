@@ -1,0 +1,11 @@
+{
+  "users": [
+    {
+      "email": "ciao@come.com",
+      "password": "$2a$10$wOcvNsHFizA2sRpBcYJHlOiR6bkqohQEHO3GH3bBfkAryVsI9qDeO",
+      "id": 1
+    }
+  ],
+  "film": [],
+  "preferiti": []
+}
