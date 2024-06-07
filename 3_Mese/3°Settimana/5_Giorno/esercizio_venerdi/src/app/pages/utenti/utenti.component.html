@@ -1,1 +1,20 @@
-<p>utenti works!</p>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">email</th>
+      <th scope="col">nome</th>
+      <th scope="col">cognome</th>
+      <th scope="col">età</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let utenti of array_user">
+      <th scope="row">{{utenti.id}}</th>
+      <td>{{utenti.email}}</td>
+      <td>{{utenti.nome}}</td>
+      <td>{{utenti.cognome}}</td>
+      <td>{{utenti.eta}} anni</td>
+    </tr>
+  </tbody>
+</table>

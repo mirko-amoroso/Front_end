@@ -1,0 +1,9 @@
+<div class="row  justify-content-around ">
+  <div class="card col-3" *ngFor="let film of array_film">
+    <img src={{film.img}} class="card-img-top " alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{film.title}}</h5>
+      <p class="card-text">{{film.anno}}</p>
+    </div>
+  </div>
+</div>

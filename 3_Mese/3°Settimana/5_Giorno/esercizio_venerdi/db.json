@@ -1,11 +1,89 @@
 {
   "users": [
     {
+      "email": "gesu@giack.com",
+      "password": "$2a$10$ef0IIbWHM60MRtJkzUxtb.ZyGWBP9o12KEWsNKpfh9u4fkobhEa4.",
+      "nome": "gesu",
+      "cognome": "cristo",
+      "eta": 33,
+      "id": 3
+    },
+    {
+      "email": "ciao@come.con",
+      "password": "$2a$10$z5vrOu5G8pbVH8Hm2rvrSeqEn73tsquu/w4SjIMnXI6r4cDgksT06",
+      "nome": "ciao",
+      "cognome": "come",
+      "eta": 10,
+      "id": 4
+    },
+    {
       "email": "ciao@come.com",
-      "password": "$2a$10$wOcvNsHFizA2sRpBcYJHlOiR6bkqohQEHO3GH3bBfkAryVsI9qDeO",
-      "id": 1
+      "password": "$2a$10$96v2pz95D8BI1yHMUZKCSOsaOTmJzzCo5vCnjp63N1rbP9kpSdLf6",
+      "nome": "ciao",
+      "cognome": "come",
+      "eta": 10,
+      "id": 5
+    },
+    {
+      "email": "andree@gmail.com",
+      "password": "$2a$10$Lxj9tCu6BjFy0iE6XzDsa.WFNgqB6zAwnm1lVK/okvWpdD5Iu/LqO",
+      "nome": "andree",
+      "cognome": "rosa",
+      "eta": 21,
+      "id": 6
     }
   ],
-  "film": [],
+  "film": [
+    {
+      "title": "southpaw",
+      "anno": 2015,
+      "img": "https://www.andreaconcas.com/wp-content/uploads/2024/03/b1b8c044da70a74885d7911ead588951.png"
+    },
+    {
+      "title": "interstellar",
+      "anno": 2014,
+      "img": "https://www.andreaconcas.com/wp-content/uploads/2024/03/b1b8c044da70a74885d7911ead588951.png"
+    },
+    {
+      "title": "inception",
+      "anno": 2010,
+      "img": "https://www.andreaconcas.com/wp-content/uploads/2024/03/b1b8c044da70a74885d7911ead588951.png"
+    },
+    {
+      "title": "pulp fiction",
+      "anno": 1994,
+      "img": "https://www.andreaconcas.com/wp-content/uploads/2024/03/b1b8c044da70a74885d7911ead588951.png"
+    },
+    {
+      "title": "fight club",
+      "anno": 1999,
+      "img": "https://www.andreaconcas.com/wp-content/uploads/2024/03/b1b8c044da70a74885d7911ead588951.png"
+    },
+    {
+      "title": "Oppenheimer",
+      "anno": 2023,
+      "img": "https://www.andreaconcas.com/wp-content/uploads/2024/03/b1b8c044da70a74885d7911ead588951.png"
+    },
+    {
+      "title": "Schindler's List - La lista di Schindler",
+      "anno": 1993,
+      "img": "https://www.andreaconcas.com/wp-content/uploads/2024/03/b1b8c044da70a74885d7911ead588951.png"
+    },
+    {
+      "title": "Vi presento Joe Black",
+      "anno": 1998,
+      "img": "https://www.andreaconcas.com/wp-content/uploads/2024/03/b1b8c044da70a74885d7911ead588951.png"
+    },
+    {
+      "title": "The truman show",
+      "anno": 1998,
+      "img": "https://www.andreaconcas.com/wp-content/uploads/2024/03/b1b8c044da70a74885d7911ead588951.png"
+    },
+    {
+      "title": "Cast Away",
+      "anno": 2000,
+      "img": "https://www.andreaconcas.com/wp-content/uploads/2024/03/b1b8c044da70a74885d7911ead588951.png"
+    }
+  ],
   "preferiti": []
 }

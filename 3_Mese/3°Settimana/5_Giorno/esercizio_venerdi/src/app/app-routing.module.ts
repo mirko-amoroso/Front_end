@@ -1,14 +1,15 @@
+import { LoginComponent } from './auth/login/login.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'auth',
+    path: '',
     loadChildren: () => import('./auth/auth.module').then((m) => m.AuthModule),
   },
   {
-    path: 'home',
-    loadChildren: () => import('./pages/home/home.module').then((m) => m.HomeModule),
+    path: 'auth',
+    loadChildren: () => import('./auth/auth.module').then((m) => m.AuthModule),
   },
   {
     path: 'utenti',
@@ -20,6 +21,7 @@ const routes: Routes = [
     loadChildren: () =>
       import('./pages/profilo/profilo.module').then((m) => m.ProfiloModule),
   },
+  { path: 'film', loadChildren: () => import('./pages/film/film.module').then(m => m.FilmModule) },
 ];
 
 @NgModule({
